@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
 import './App.css';
+import Navigation from './components/Navigation/Navigation';
+import Logo from './components/Logo/Logo';
+import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
 
 class App extends Component {
   render() {
     return(
       <div className="App">
-        <header className="App-header">
-          <h1>App Title!</h1>
-        </header>
-        <p>Some text</p>
+        <Navigation />
+        <Logo />
+        <ImageLinkForm />
+        {/*
+                <FaceRecognition />*/}
       </div>
     );
   }
