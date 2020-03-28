@@ -1,12 +1,25 @@
 import React from 'react';
 import './FaceRecognition.css';
 
-const FaceRecognition = ({ imgUrl, box }) =>{
+const FaceRecognition = ({ imgUrl, boxes }) => {
+  let items = [];
+  for (let i = 0; i < boxes.length; i++) {
+     items.push(
+     	<div 
+     	className='bounding-box' 
+     	key={i} 
+     	style={{top: boxes[i].topRow, right: boxes[i].rightCol, bottom: boxes[i].bottomRow, left: boxes[i].leftCol}}
+     	>
+     	</div>)
+   }
+
 	return(
 		<div className='center na'>
 			<div className='absolute mt3'>
 				<img id='inputimage' alt='' src={imgUrl} width='500px' height='auto' />
-				<div className='bounding-box' style={{top: box.topRow, right: box.rightCol, bottom: box.bottomRow, left: box.leftCol}}></div>
+				<div>
+					{items}
+				</div>
 			</div>
 		</div>
 	);
