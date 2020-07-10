@@ -6,8 +6,8 @@ You must register in order to use it and the app will keep count of how many tim
 ## Technologies used
 
 Front-End: React <br>
-Server: Node.js + Express.js 
-DataBase: PostgresSQL
+Server: Node.js + Express.js <br>
+DataBase: PostgresSQL <br>
 
 
 
