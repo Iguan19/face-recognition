@@ -79,7 +79,7 @@ class App extends Component {
   }
 
   onButtonSubmit = () => {
-    this.setState({imgUrl: this.state.input});
+    this.setState({ imgUrl: this.state.input, boxes: {} });
       fetch('https://peaceful-stream-78196.herokuapp.com/imgurl', {
         method: 'post',
         headers: {'Content-Type': 'application/json'},
